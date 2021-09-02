@@ -50,8 +50,6 @@ function validatePost(req, res, next) {
   }
 }
 
-// do not forget to expose these functions to other modules
-
 module.exports = {
   logger, 
   validateUserId, 
