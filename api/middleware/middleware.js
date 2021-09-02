@@ -30,7 +30,7 @@ function validateUser(req, res, next) {
   const { name } = req.body
   if(!name) {
     res.status(400).json({
-      message: "missing required name field"
+       message: "missing required name field"
     })
   } else {
     req.name = name.trim()
