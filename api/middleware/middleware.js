@@ -1,5 +1,9 @@
 function logger(req, res, next) {
-  // DO YOUR MAGIC
+  const timestamp = new Date().toLocaleString()
+  const method = req.method
+  const url = req.originalUrl
+  console.log(`[${timestamp}, ${method}, ${url}]`)
+  next()ß
 }
 
 function validateUserId(req, res, next) {
